@@ -12,6 +12,7 @@
 		F59BF97322E712E100C79310 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF96F22E712E000C79310 /* Price.swift */; };
 		F59BF97422E712E100C79310 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF97022E712E000C79310 /* Server.swift */; };
 		F59BF97522E712E100C79310 /* Plans.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF97122E712E100C79310 /* Plans.swift */; };
+		F5A09DEE22F103BA0041E923 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A09DED22F103BA0041E923 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +29,11 @@
 		F59BF95422E7123200C79310 /* VpsvilleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VpsvilleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59BF95822E7123200C79310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59BF95D22E7123200C79310 /* VpsvilleAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VpsvilleAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F59BF96422E7123200C79310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59BF96E22E712E000C79310 /* AccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
 		F59BF96F22E712E000C79310 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		F59BF97022E712E000C79310 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		F59BF97122E712E100C79310 /* Plans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plans.swift; sourceTree = "<group>"; };
+		F5A09DED22F103BA0041E923 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				F59BF95622E7123200C79310 /* VpsvilleAPI */,
-				F59BF96122E7123200C79310 /* VpsvilleAPITests */,
 				F59BF95522E7123200C79310 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,16 +80,9 @@
 				F59BF96F22E712E000C79310 /* Price.swift */,
 				F59BF97022E712E000C79310 /* Server.swift */,
 				F59BF95822E7123200C79310 /* Info.plist */,
+				F5A09DED22F103BA0041E923 /* UserData.swift */,
 			);
 			path = VpsvilleAPI;
-			sourceTree = "<group>";
-		};
-		F59BF96122E7123200C79310 /* VpsvilleAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				F59BF96422E7123200C79310 /* Info.plist */,
-			);
-			path = VpsvilleAPITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +196,7 @@
 				F59BF97522E712E100C79310 /* Plans.swift in Sources */,
 				F59BF97222E712E100C79310 /* AccountInfo.swift in Sources */,
 				F59BF97422E712E100C79310 /* Server.swift in Sources */,
+				F5A09DEE22F103BA0041E923 /* UserData.swift in Sources */,
 				F59BF97322E712E100C79310 /* Price.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

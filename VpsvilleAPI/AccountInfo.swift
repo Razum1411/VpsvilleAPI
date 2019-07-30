@@ -1,16 +1,8 @@
-//
-//  AccountInfo.swift
-//  vpsville
-//
-//  Created by An Zuzu on 02.04.2019.
-//  Copyright © 2019 An Zuzu. All rights reserved.
-//
-
 import Foundation
 
 
 
-open class AccountInfo: Decodable {
+public class AccountInfo: Decodable {
     public var id: String
     public var login: String
     public var money: String
@@ -36,7 +28,7 @@ open class AccountInfo: Decodable {
         var request = URLRequest(url: jsonUrlString)
         request.httpMethod = "GET"
         request.addValue("application", forHTTPHeaderField: "accept")
-        request.addValue("52f01bf5f14c930b171223964bc26ef4", forHTTPHeaderField: "vpsville-api-key")
+        request.addValue(apiKey, forHTTPHeaderField: "vpsville-api-key")
         var json = [AccountInfo()]
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {return}

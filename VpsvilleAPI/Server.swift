@@ -1,11 +1,3 @@
-//
-//  Price.swift
-//  vpsville1.0
-//
-//  Created by An Zuzu on 27.04.2019.
-//  Copyright © 2019 An Zuzu. All rights reserved.
-//
-
 import Foundation
 
 struct Disk: Decodable {
@@ -51,7 +43,7 @@ public class Server: Decodable {
         var request = URLRequest(url: jsonUrlString)
         request.httpMethod = "GET"
         request.addValue("application", forHTTPHeaderField: "accept")
-        request.addValue("52f01bf5f14c930b171223964bc26ef4", forHTTPHeaderField: "vpsville-api-key")
+        request.addValue(apiKey, forHTTPHeaderField: "vpsville-api-key")
         var json = [Server()]
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {return}

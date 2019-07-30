@@ -1,11 +1,3 @@
-//
-//  Price.swift
-//  vpsville1.0
-//
-//  Created by An Zuzu on 27.04.2019.
-//  Copyright © 2019 An Zuzu. All rights reserved.
-//
-
 import Foundation
 
 
@@ -35,7 +27,7 @@ public class Plans: Decodable {
         var request = URLRequest(url: jsonUrlString)
         request.httpMethod = "GET"
         request.addValue("application", forHTTPHeaderField: "accept")
-        request.addValue("52f01bf5f14c930b171223964bc26ef4", forHTTPHeaderField: "vpsville-api-key")
+        request.addValue(apiKey, forHTTPHeaderField: "vpsville-api-key")
         var json = [Plans()]
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {return}
@@ -46,7 +38,7 @@ public class Plans: Decodable {
                 //                self.id = json[i].id
                 //                self.ip = json[i].ip
                 //                self.name = json[i].name
-                //                self.viewname = json[i].viewname
+                //                self.viewname = json[i].viewname        //maybe useful for somebody
                 //                self.mem = json[i].mem
                 //                self.cpu = json[i].cpu
                 //                self.status = json[i].status
