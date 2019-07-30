@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F59BF95E22E7123200C79310 /* VpsvilleAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59BF95422E7123200C79310 /* VpsvilleAPI.framework */; };
-		F59BF96322E7123200C79310 /* VpsvilleAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF96222E7123200C79310 /* VpsvilleAPITests.swift */; };
-		F59BF96522E7123200C79310 /* VpsvilleAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F59BF95722E7123200C79310 /* VpsvilleAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F59BF97222E712E100C79310 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF96E22E712E000C79310 /* AccountInfo.swift */; };
+		F59BF97322E712E100C79310 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF96F22E712E000C79310 /* Price.swift */; };
+		F59BF97422E712E100C79310 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF97022E712E000C79310 /* Server.swift */; };
+		F59BF97522E712E100C79310 /* Plans.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BF97122E712E100C79310 /* Plans.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,13 @@
 
 /* Begin PBXFileReference section */
 		F59BF95422E7123200C79310 /* VpsvilleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VpsvilleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F59BF95722E7123200C79310 /* VpsvilleAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VpsvilleAPI.h; sourceTree = "<group>"; };
 		F59BF95822E7123200C79310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59BF95D22E7123200C79310 /* VpsvilleAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VpsvilleAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F59BF96222E7123200C79310 /* VpsvilleAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpsvilleAPITests.swift; sourceTree = "<group>"; };
 		F59BF96422E7123200C79310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59BF96E22E712E000C79310 /* AccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
+		F59BF96F22E712E000C79310 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		F59BF97022E712E000C79310 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		F59BF97122E712E100C79310 /* Plans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plans.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,10 @@
 		F59BF95622E7123200C79310 /* VpsvilleAPI */ = {
 			isa = PBXGroup;
 			children = (
-				F59BF95722E7123200C79310 /* VpsvilleAPI.h */,
+				F59BF96E22E712E000C79310 /* AccountInfo.swift */,
+				F59BF97122E712E100C79310 /* Plans.swift */,
+				F59BF96F22E712E000C79310 /* Price.swift */,
+				F59BF97022E712E000C79310 /* Server.swift */,
 				F59BF95822E7123200C79310 /* Info.plist */,
 			);
 			path = VpsvilleAPI;
@@ -80,7 +87,6 @@
 		F59BF96122E7123200C79310 /* VpsvilleAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				F59BF96222E7123200C79310 /* VpsvilleAPITests.swift */,
 				F59BF96422E7123200C79310 /* Info.plist */,
 			);
 			path = VpsvilleAPITests;
@@ -93,7 +99,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F59BF96522E7123200C79310 /* VpsvilleAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +153,7 @@
 				TargetAttributes = {
 					F59BF95322E7123200C79310 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					F59BF95C22E7123200C79310 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59BF97522E712E100C79310 /* Plans.swift in Sources */,
+				F59BF97222E712E100C79310 /* AccountInfo.swift in Sources */,
+				F59BF97422E712E100C79310 /* Server.swift in Sources */,
+				F59BF97322E712E100C79310 /* Price.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F59BF96322E7123200C79310 /* VpsvilleAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		F59BF96922E7123200C79310 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.vpsville.VpsvilleAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		F59BF96A22E7123200C79310 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +401,7 @@
 		F59BF96C22E7123200C79310 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VpsvilleAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +419,7 @@
 		F59BF96D22E7123200C79310 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VpsvilleAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
